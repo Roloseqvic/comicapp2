@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /login.html
+Disallow: /registrate.html
+Disallow: /img/
+Allow: /img/logo.png
+Sitemap: https://roloseqvic.github.io/comicapp2/sitemap.xml

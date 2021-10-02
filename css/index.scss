@@ -1,0 +1,131 @@
+//Definicion de variables
+@import "general";
+@import "colores";
+@import "mixinBoton";
+
+@keyframes titulo{
+    from{ transform:rotate(0deg) ; -webkit-transform:rotate(0deg) ; -moz-transform:rotate(0deg) ; -ms-transform:rotate(0deg) ; -o-transform:rotate(0deg) ; }
+    to{ transform:rotate(360deg) ; -webkit-transform:rotate(360deg) ; -moz-transform:rotate(360deg) ; -ms-transform:rotate(360deg) ; -o-transform:rotate(360deg) ; }
+}
+
+@keyframes latido{
+    0%{ transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+    50%{ transform:scale(2) ; -webkit-transform:scale(2) ; -moz-transform:scale(2) ; -ms-transform:scale(2) ; -o-transform:scale(2) ; }
+    100%{ transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
+
+.latido{
+    animation-name: latido;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h1{
+    animation-name: titulo;
+    animation-duration:3s;
+}
+#categorias{
+    a {
+        text-decoration: none;
+        color: $negro 
+    }
+    a h4 {
+       @include boton;
+       border: solid 2px $amarillo;
+    }
+    a h4:hover {
+        @include botonHover;
+     }
+
+     .par{
+         @include botonEspecial(purple, white)
+     }
+     .impar{
+        @include botonEspecial(blue, green)
+    }
+    .clsTres{
+        @include botonEspecial;
+    }
+}
+
+
+h1,
+h2,
+#buscar,
+#categorias {
+    width: 100%;
+}
+
+main {
+    img {
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
+
+#categorias,
+footer {
+    display: flex;
+    flex: {
+        wrap: wrap;
+        direction: column;
+    }
+    
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+
+#telefonos{
+    padding: 20px;
+    text-align: right;
+    color: $amarillo;
+    background-color: $negro;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) {
+
+    #categorias,
+    footer {
+        flex-direction: row;
+    }
+
+    #categorias div {
+        width: 30%;
+    }
+
+    #footer div {
+        width: 25%;
+    }
+}
+
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #categorias,footer {
+        flex-direction: row;
+    }
+
+    #categorias div {
+        width: 40%;
+    }
+
+    #footer div {
+        width: 40%;
+    }
+
+}

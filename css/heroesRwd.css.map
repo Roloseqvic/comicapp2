@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;EAGE;AAEF,MAAM,EAAE,SAAS,EAAE,KAAK;EAEpB,AAAA,IAAI;EACJ,MAAM,CAAC;IACH,cAAc,EAAE,GAAG;GACtB;EAED,AAAA,IAAI,CAAC,OAAO,CAAC;IACT,KAAK,EAAE,GAAG;GACb;EAED,AAAA,OAAO,CAAC,GAAG,CAAC;IACR,KAAK,EAAE,GAAG;GACb",
+    "sources": [
+        "heroesRwd.scss"
+    ],
+    "names": [],
+    "file": "heroesRwd.css"
+}

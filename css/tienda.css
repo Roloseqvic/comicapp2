@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/*Hoja de estilos con las reglas comunes del sitio web*/
+/*
+    Autor: Rolando Sequeira
+    creado: 5/08/2021
+    actualizado:
+    Encargado:
+*/
+@-webkit-keyframes marquesina {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 105%;
+  }
+}
+@keyframes marquesina {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 105%;
+  }
+}
+
+.marquesina {
+  position: absolute;
+  left: -200px;
+  -webkit-animation-name: marquesina;
+          animation-name: marquesina;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.patito {
+  color: purple;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  font-size: 16px;
+  /*tamaño relativo base*/
+}
+
+h1, h2, h3 {
+  font-family: 'action_man', cursive;
+  /*fuente*/
+  font-weight: bolder;
+  /*negrita*/
+  color: #777338;
+  /*color de fuente*/
+  text-align: center;
+  /*alineación horizontal*/
+}
+
+h1, h4 {
+  margin-bottom: 25px;
+}
+
+h1 {
+  padding-bottom: 20px;
+  color: #FB9D07;
+  /*color de fuente*/
+  font-size: 2em;
+  /*tamañ de fuente*/
+  font-style: italic;
+  /*italic*/
+  /*text-decoration: underline; */
+  /*subrauado*/
+  text-transform: uppercase;
+  /*convertir a mayuscula*/
+  letter-spacing: 5px;
+  border-style: none none solid none;
+  -o-border-image: url("../img/border.png") 20 stretch;
+     border-image: url("../img/border.png") 20 stretch;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+p {
+  text-align: justify;
+  text-indent: 3px;
+  /*sangria*/
+  line-height: 35px;
+  /*interlineado*/
+}
+
+.sombra {
+  text-shadow: 2px 2px 5px;
+}
+
+h2 {
+  text-shadow: 0px 0px 16px;
+}
+
+.active {
+  color: #FB9D07;
+  border-bottom: solid 2px #FB9D07;
+}
+
+header {
+  background-color: rgba(242, 231, 75, 0.4);
+}
+
+header ul li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  list-style: none;
+  /*modificar viñeta d ela lista*/
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background: #BEC7C7 url("../img/goku.png") no-repeat bottom right;
+  background-size: 100px;
+}
+
+h1, p {
+  width: 100%;
+}
+
+main {
+  padding: 25px;
+}
+
+main img {
+  width: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+main div {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+main div button {
+  border: solid 2px #FB9D07;
+  color: #FB9D07;
+  background-color: white;
+  padding: 10px;
+}
+
+footer, main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+@media (min-width: 1025px) {
+  main,
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main div {
+    width: 25%;
+  }
+  #footer div {
+    width: 25%;
+  }
+}
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main,
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main div {
+    width: 40%;
+  }
+  #footer div {
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=tienda.css.map */

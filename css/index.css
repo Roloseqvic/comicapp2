@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/*Hoja de estilos con las reglas comunes del sitio web*/
+/*
+    Autor: Rolando Sequeira
+    creado: 5/08/2021
+    actualizado:
+    Encargado:
+*/
+@-webkit-keyframes marquesina {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 105%;
+  }
+}
+@keyframes marquesina {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 105%;
+  }
+}
+
+.marquesina {
+  position: absolute;
+  left: -200px;
+  -webkit-animation-name: marquesina;
+          animation-name: marquesina;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.patito {
+  color: purple;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  font-size: 16px;
+  /*tamaño relativo base*/
+}
+
+h1, h2, h3 {
+  font-family: 'action_man', cursive;
+  /*fuente*/
+  font-weight: bolder;
+  /*negrita*/
+  color: #777338;
+  /*color de fuente*/
+  text-align: center;
+  /*alineación horizontal*/
+}
+
+h1, h4 {
+  margin-bottom: 25px;
+}
+
+h1 {
+  padding-bottom: 20px;
+  color: #FB9D07;
+  /*color de fuente*/
+  font-size: 2em;
+  /*tamañ de fuente*/
+  font-style: italic;
+  /*italic*/
+  /*text-decoration: underline; */
+  /*subrauado*/
+  text-transform: uppercase;
+  /*convertir a mayuscula*/
+  letter-spacing: 5px;
+  border-style: none none solid none;
+  -o-border-image: url("../img/border.png") 20 stretch;
+     border-image: url("../img/border.png") 20 stretch;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+p {
+  text-align: justify;
+  text-indent: 3px;
+  /*sangria*/
+  line-height: 35px;
+  /*interlineado*/
+}
+
+.sombra {
+  text-shadow: 2px 2px 5px;
+}
+
+h2 {
+  text-shadow: 0px 0px 16px;
+}
+
+.active {
+  color: #FB9D07;
+  border-bottom: solid 2px #FB9D07;
+}
+
+header {
+  background-color: rgba(242, 231, 75, 0.4);
+}
+
+header ul li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  list-style: none;
+  /*modificar viñeta d ela lista*/
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background: #BEC7C7 url("../img/goku.png") no-repeat bottom right;
+  background-size: 100px;
+}
+
+@-webkit-keyframes titulo {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes titulo {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes latido {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+.latido {
+  -webkit-animation-name: latido;
+          animation-name: latido;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+h1 {
+  -webkit-animation-name: titulo;
+          animation-name: titulo;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+#categorias a {
+  text-decoration: none;
+  color: black;
+}
+
+#categorias a h4 {
+  margin: 15px auto;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+  border: solid 2px #FFF34F;
+}
+
+#categorias a h4:hover {
+  background-color: #FFF34F;
+}
+
+#categorias .par {
+  background-color: purple;
+  color: white;
+}
+
+#categorias .impar {
+  background-color: blue;
+  color: green;
+}
+
+#categorias .clsTres {
+  background-color: blue;
+  color: green;
+}
+
+h1,
+h2,
+#buscar,
+#categorias {
+  width: 100%;
+}
+
+main img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#categorias,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#telefonos {
+  padding: 20px;
+  text-align: right;
+  color: #FFF34F;
+  background-color: black;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+@media (min-width: 1025px) {
+  #categorias,
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #categorias div {
+    width: 30%;
+  }
+  #footer div {
+    width: 25%;
+  }
+}
+
+/* 
+    ##Device = Tablets
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #categorias, footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #categorias div {
+    width: 40%;
+  }
+  #footer div {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

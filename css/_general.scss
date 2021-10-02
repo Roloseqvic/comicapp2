@@ -1,0 +1,102 @@
+/*Hoja de estilos con las reglas comunes del sitio web*/
+
+/*
+    Autor: Rolando Sequeira
+    creado: 5/08/2021
+    actualizado:
+    Encargado:
+*/
+@import "colores"; 
+
+@keyframes marquesina{
+    0%{ left:-200px}
+    100%{left:105%}
+
+}
+.marquesina{
+    position: absolute;
+    left:-200px;
+    animation-name: marquesina;
+    animation-duration: 20s;
+    animation-iteration-count: infinite ;
+}
+
+.patito{
+    color: $purpura; 
+}
+body{
+    font: {
+        family: $fuente;
+        size: 16px; /*tamaño relativo base*/
+    }
+}
+
+h1,h2,h3{
+    font: {
+        family: 'action_man', cursive; /*fuente*/
+        weight: bolder; /*negrita*/
+    }
+    
+    color:$dorado; /*color de fuente*/
+    text-align: center; /*alineación horizontal*/
+}
+h1,h4{
+    margin-bottom: 25px;
+}
+
+h1{
+    padding-bottom: 20px;
+    color:$naranja; /*color de fuente*/
+    font-size: 2em; /*tamañ de fuente*/
+    font-style: italic; /*italic*/
+    /*text-decoration: underline; *//*subrauado*/
+    text-transform: uppercase; /*convertir a mayuscula*/
+    letter-spacing: 5px;
+    border-style:  none none solid none;
+    border-image: url("../img/border.png") 20 stretch ;
+}   
+
+h2,h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+
+p{
+    text-align: justify;
+    text-indent: 3px; /*sangria*/
+    line-height: 35px; /*interlineado*/
+}
+
+.sombra{
+    text-shadow: 2px 2px 5px;
+}
+
+h2{
+    text-shadow: 0px 0px 16px;
+}
+
+.active{
+    color: $naranja;
+    border-bottom: solid 2px $naranja;
+}
+header{ 
+    background-color: rgba(242, 231, 75, 0.4);
+    ul{
+        li{
+        margin-left: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        list-style: none; /*modificar viñeta d ela lista*/
+        }
+    }
+    a{
+        text-decoration: none;
+        color:$negro
+    }
+}
+
+footer{
+    background:$gris url("../img/goku.png") no-repeat bottom right;
+    background-size: 100px;
+}

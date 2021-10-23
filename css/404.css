@@ -1,0 +1,44 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+#btnInicio{
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#imagen{
+    margin: 0 auto;
+}
+#titulos, form{
+    text-align: center;
+    width: 100%;
+    
+}
+
+img{
+    width: 800px;
+    height: 500px;
+}
+
+#menu404{
+    text-align: center;
+}
+
+form input,button{
+    padding: 10px;
+}
+form input{
+    width: 30%;
+}
